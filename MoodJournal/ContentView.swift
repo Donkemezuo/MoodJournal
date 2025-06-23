@@ -18,6 +18,7 @@ struct ContentView: View {
                 HomeView()
             }
             .tabItem {
+                Image(systemName: "house.fill")
                 Text("Home")
             }
             .tag(0)
@@ -25,6 +26,7 @@ struct ContentView: View {
                 CalendarView()
             }
             .tabItem {
+                Image(systemName: "calendar")
                 Text("Calendar")
             }
             .tag(1)
@@ -33,6 +35,7 @@ struct ContentView: View {
                 InsightsView()
             }
             .tabItem {
+                Image(systemName: "chart.line.uptrend.xyaxis.circle")
                 Text("Insights")
             }
             .tag(2)
@@ -41,6 +44,7 @@ struct ContentView: View {
                 AccountView()
             }
             .tabItem {
+                Image(systemName: "gear")
                 Text("Account")
             }
             .tag(3)
