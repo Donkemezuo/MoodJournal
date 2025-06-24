@@ -9,7 +9,14 @@ import SwiftUI
 
 struct AccountView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .ignoresSafeArea(.all)
+        .background(Color.background)
+        .navigationTitle("Account")
+        .navigationBarTitleDisplayMode(.large)
     }
 }
 

@@ -49,6 +49,13 @@ struct ContentView: View {
             }
             .tag(3)
         }
+        .accentColor(.selectedTab)
+        .tint(.selectedTab)
+        .onAppear(perform: {
+            UITabBar.appearance().unselectedItemTintColor = .unselectedTab
+            UITabBar.appearance().backgroundColor = .tabTint
+            UINavigationBar.appearance().largeTitleTextAttributes = [.foregroundColor: UIColor.tabTint]
+        })
     }
 }
 
